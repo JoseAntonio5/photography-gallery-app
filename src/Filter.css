@@ -1,0 +1,45 @@
+.Filter {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+button.Filter-selected {
+    border: 1px solid rgb(0, 0, 0) !important; 
+}
+
+.Filter button {
+    width: 100px;
+    height: 30px;
+    margin: 0 10px;
+    padding: 7px 20px;
+
+    color: green;
+    background-color: #c2fbd7;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+
+    transition: all 250ms;
+}
+
+.Filter button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 650px) {
+
+    .Filter {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .Filter button {
+        margin: 5px 5px;
+    }
+
+}
+

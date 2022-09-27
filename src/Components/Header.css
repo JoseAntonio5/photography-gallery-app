@@ -1,0 +1,49 @@
+.Header {
+    margin: 50px auto 0 auto;
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Header-image img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    object-position: 0px -80px;
+    border-radius: 50%;
+}
+
+.Header-title {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+@media (max-width: 650px) {
+
+  .Header {
+    margin: 10px auto;
+        flex-direction: column;
+   }
+
+   .Header-image img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: 0px -80px;
+        border-radius: 50%;
+   }
+
+   .Header-title {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .Header-text p {
+        font-size: 1rem;
+    }
+    
+}

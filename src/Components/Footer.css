@@ -1,0 +1,45 @@
+.Footer {
+    width: 100%;
+    height: 86px;
+    margin-top: 50px;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+}
+
+.Footer-container {
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Footer-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer a {
+    color: #000;
+    line-height: 86px;
+    display: flex;
+    align-items: center;
+}
+
+.Footer svg {
+    font-size: 3rem;
+    margin-right: 10px;
+}
+
+@media (max-width:480px) {
+    .Footer {
+        height: 128px;
+    }
+
+    .Footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
