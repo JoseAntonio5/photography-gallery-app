@@ -13,7 +13,7 @@ button.Filter-selected {
     margin: 0 10px;
     padding: 7px 20px;
 
-    color: green;
+    color: #005e00;
     background-color: #c2fbd7;
 
     font-size: 16px;
@@ -30,12 +30,14 @@ button.Filter-selected {
     transform: scale(1.05);
 }
 
-@media (max-width: 650px) {
-
+@media (max-width: 768px) {
     .Filter {
         display: flex;
         overflow-x: auto;
     }
+}
+
+@media (max-width: 650px) {
 
     .Filter button {
         margin: 5px 5px;

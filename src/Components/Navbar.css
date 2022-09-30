@@ -26,12 +26,23 @@
     color: #000000;
     text-decoration: none;
     border-radius: 16px;
-    
+    position: relative;
+}
+
+.Navbar-item a::after {
+    content: "";
+    position: absolute;
+    background-color: #005e00;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+
     transition: all 250ms ease-in-out;
 }
 
-.Navbar-item a:hover {
-    background-color: #d0d0d0;
+.Navbar-item a:hover::after {
+    width: 100%;
 }
 
 @media (max-width: 650px) {
