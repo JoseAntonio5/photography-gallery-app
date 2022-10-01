@@ -34,3 +34,6 @@ You may also see any lint errors in the console.
 ![](imgs/home.png)
 ![](imgs/about.png)
 ![](imgs/contact.png)
+
+#### Author
+José Antônio ©️ 2022
