@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,7 +8,19 @@ function Contact() {
 
     const form = useRef();
 
-    const notify = () => toast.success("Email successfully sent!");
+    const notifySuccess = () => toast.success("Email successfully sent!");
+    const notifyError = () => toast.error("Cannot send email. Try again.");
+
+    const [message, setMessage] = useState('');
+
+    const handleChange = e => {
+        setMessage(e.target.value);
+    }
+
+    const preventEmptyEmail = (e) => {
+        notifyError();
+        e.preventDefault();
+    }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -30,12 +42,15 @@ function Contact() {
             <div className='Contact-form'>
                 <form ref={form} onSubmit={sendEmail}>
                     <label>Name:</label>
-                    <input type="text" name="user_name" />
+                    <input type="text" id="user_name" name="user_name" onChange={handleChange} />
                     <label>Email:</label>
-                    <input type="email" name="user_email" />
+                    <input type="email" id="user_email" name="user_email" onChange={handleChange} />
                     <label>Message:</label>
-                    <textarea name="message" />
-                    <input type="submit" value="Send" onClick={notify} />
+                    <textarea name="message" id="message" onChange={handleChange} />
+                    <input 
+                    type="submit" 
+                    value="Send" 
+                    onClick={message.trim().length !== 0 ? notifySuccess : preventEmptyEmail} />
                 </form>
                 <ToastContainer />
             </div>
