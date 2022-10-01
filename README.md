@@ -1,8 +1,12 @@
 # Photography Gallery App 🖼️
 
-## Getting Started with Create React App
+### Check it out now! 💻
+### [Live Site](https://effulgent-youtiao-85ae83.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##  Screenshots
+![](imgs/home.png)
+![](imgs/about.png)
+![](imgs/contact.png)
 
 ## Available Scripts
 
