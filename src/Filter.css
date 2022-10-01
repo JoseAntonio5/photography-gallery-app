@@ -1,6 +1,8 @@
 .Filter {
     margin-top: 10px;
     margin-bottom: 50px;
+
+    animation: transitionInY 750ms;
 }
 
 button.Filter-selected {
@@ -28,6 +30,18 @@ button.Filter-selected {
 
 .Filter button:hover {
     transform: scale(1.05);
+}
+
+@keyframes transitionInY {
+    from {
+        opacity: 0;
+        transform: rotateY(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+    }
 }
 
 @media (max-width: 768px) {
