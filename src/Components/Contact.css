@@ -1,4 +1,5 @@
 .Contact {
+    min-height: 73vh;
     animation: transitionInX 750ms;
 }
 

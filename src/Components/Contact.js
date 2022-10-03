@@ -42,9 +42,9 @@ function Contact() {
             <div className='Contact-form'>
                 <form ref={form} onSubmit={sendEmail}>
                     <label>Name:</label>
-                    <input type="text" id="user_name" name="user_name" onChange={handleChange} />
+                    <input type="text" id="name" name="name" onChange={handleChange} />
                     <label>Email:</label>
-                    <input type="email" id="user_email" name="user_email" onChange={handleChange} />
+                    <input type="email" id="email" name="email" onChange={handleChange} />
                     <label>Message:</label>
                     <textarea name="message" id="message" onChange={handleChange} />
                     <input 
