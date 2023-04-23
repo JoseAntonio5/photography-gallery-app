@@ -10,7 +10,7 @@ Este é um projeto pessoal que criei para estudar e aprender novos conceitos de 
 
 🇺🇸
 <br>
-This is a personal project I created to study and learn new React concepts. It is based on a portfólio of a photographer. The project have some nice features, like the images filter, the about page and the functional contact form on the contact page.
+This is a personal project I created to study and learn new React concepts. It is based on a portfólio of a photographer. The project has some nice features, like the image filter, the about page and the functional contact form on the contact page.
 
 ## Built with 🛠️
 - React.js
